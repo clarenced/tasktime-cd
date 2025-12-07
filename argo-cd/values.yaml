@@ -1,0 +1,4 @@
+argo-cd:
+  dex:
+    enabled: false
+  namespaceOverride: "argo-cd"

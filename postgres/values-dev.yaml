@@ -1,0 +1,16 @@
+primary:
+  name: tasktime-db-dev
+  livenessProbe:
+    enabled: true
+  readinessProbe:
+    enabled: true
+  persistence:
+    size: 5Gi
+
+backup:
+  enabled: false
+
+auth:
+ database: tasktime
+ username: tasktime-user 
+ database: tasktime-database

@@ -1,0 +1,6 @@
+# Helm dependencies archives
+*.tgz
+
+# (optionnel mais recommandé)
+charts/*.tgz
+
