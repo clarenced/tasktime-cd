@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: tasktime-cd
+  namespace: argo-cd
+  finalizers:
+   - resources-finalizer.argocd.argoproj.io
+spec:
+  description: "Infrastructure (DB, ingress, certs...)"
+
+  sourceRepos:
+    - https://github.com/clarenced/tasktime-cd
+
+  destinations:
+    - namespace: tasktime-cd
+      server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+

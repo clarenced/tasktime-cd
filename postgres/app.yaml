@@ -4,9 +4,8 @@ metadata:
   name: postgres-dev
   namespace: argo-cd
 spec:
-  project: taskTime
+  project: tasktime-cd
   source:
-    chart: postgres
     repoURL: https://github.com/clarenced/tasktime-cd.git
     targetRevision: main
     path: postgres
@@ -15,4 +14,9 @@ spec:
         - values-dev.yaml
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: postgres
+    namespace: tasktime-cd
+  syncPolicy:
+    automated:
+      prune: true 
+      selfHeal: true 
+
