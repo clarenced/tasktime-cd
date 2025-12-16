@@ -1,0 +1,4 @@
+database:
+  url: jdbc:postgresql://postgres-dev-postgresql.tasktime-cd.svc.cluster.local:5432/tasktime
+  username: tasktime-user
+  password: tasktime-password
