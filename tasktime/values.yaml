@@ -17,11 +17,6 @@ service:
   port: 8080
   nodePort: 31000
 
-database:
-  url: ""
-  username: ""
-  password: ""
-
 resources:
   limits:
     cpu: 500m
