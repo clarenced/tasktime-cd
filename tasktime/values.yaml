@@ -6,7 +6,7 @@ replicaCount: 3
 
 image:
   repository: ghcr.io/clarenced/tasktime
-  version: latest
+  version: 1.1.2
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
