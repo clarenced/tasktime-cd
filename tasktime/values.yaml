@@ -9,6 +9,9 @@ image:
   version: latest
   pullPolicy: IfNotPresent
 
+imagePullSecrets:
+  - name: ghcr-pull-secret
+  
 service:
   type: NodePort
   port: 8080

@@ -20,6 +20,8 @@ spec:
       labels:
         {{- include "tasktime.selectorLabels" . | nindent 8 }}
     spec:
+      imagePullSecrets:
+      - ghcr-pull-secret
       containers:
       - name: tasktime
         image: "{{ .Values.image.repository }}:{{ .Values.image.version }}"
