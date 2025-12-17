@@ -1,16 +1,17 @@
-primary:
-  name: tasktime-db-dev
-  livenessProbe:
-    enabled: true
-  readinessProbe:
-    enabled: true
-  persistence:
-    size: 5Gi
+postgresql:
+  primary:
+    name: tasktime-db-dev
+    livenessProbe:
+      enabled: true
+    readinessProbe:
+      enabled: true
+    persistence:
+      size: 5Gi
 
-backup:
-  enabled: false
+  backup:
+    enabled: false
 
-auth:
-  database: tasktime
-  username: tasktime-user
-  password: tasktime-password
+  auth:
+    database: tasktime
+    username: tasktime-user
+    password: tasktime-password
