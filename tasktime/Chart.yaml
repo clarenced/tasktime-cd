@@ -2,4 +2,4 @@ apiVersion: v2
 name: tasktime
 version: 1.0.0
 description: TaskTime application Helm chart for Kubernetes deployment
-appVersion: "1.1.8"
+appVersion: "1.1.9"
