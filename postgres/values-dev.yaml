@@ -11,6 +11,6 @@ backup:
   enabled: false
 
 auth:
- database: tasktime
- username: tasktime-user 
- database: tasktime-database
+  database: tasktime
+  username: tasktime-user
+  password: tasktime-password
