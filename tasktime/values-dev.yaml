@@ -1,4 +1,4 @@
 database:
-  url: jdbc:postgresql://postgres-dev-postgresql.tasktime-cd.svc.cluster.local:5432/tasktime
+  url: jdbc:postgresql://postgres-dev-postgresql.tasktime-cd.svc.cluster.local:5432/tasktime?currentSchema=task_time
   username: tasktime-user
   password: tasktime-password
